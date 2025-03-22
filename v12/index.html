@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
@@ -25,7 +26,7 @@
 
 </head>
 <body>
-<!--DIOS ES BUENO[START V13 5745156905937303029]-->
+<!--DIOS ES BUENO[START V12.2 5745156905937303029]-->
 <header class='hd'>
 <nav class='dfcc'>
 <h1 class='lg txc'>WiSVG - Optimiza y edita tus archivos svg con la mejor herramienta del momento</h1>
@@ -219,7 +220,6 @@
 <!--[END] OPTIMIZADOR-->
 </div>
 <div class='mih mih5 txc' id='Editar'>
-<textarea class='txearr' placeholder='let Genail=[{icono:&#39;star&#39;,tag:&#39;stars&#39;,ivalue:&#39;&#39;},]'></textarea><button class='goarr'>Generar Genial</button><file class='txesel'></file>
 <button class='gov0'>Original</button>
 <button class='gov1'>Optimizar automático v1</button>
 <button class='gov2'>Optimizar automático v2</button>
@@ -331,12 +331,9 @@ function upsvg(tis){
   txr.next('.tzr').html(`<p>Tamaño Optimizado: ${opti}</p><p class="wzi" title="${owin}">Logrado: ${owin}%</p>`);
   let vop = $(tis).closest('.mih').find('.wzi'), vx = vop.attr('title'); vop.removeClass('bn wr ok');
   vx == 0.00 ? vop.addClass('bn') : vx > 0 ? vop.addClass('ok') : vop.addClass('wr');
-};
+}$('.txe').each((_,e)=> upsvg(e)); $('.txe').on('input',function(){upsvg(this)});
 $(document).on('click','.bopv1,.controls button,.bopv4',function(){upsvg(this);s(this);});  
-detm(function(){
-  $('.txe').each((_,e)=> upsvg(e)); $('.txe').on('input',function(){upsvg(this)});
-  SVGV1();
-},500); 
+  
 // OPTIMIZADOR [V1 START]
 function SVGV1(){
 let svg = $('#input').val();
@@ -363,11 +360,9 @@ function limpiar() {
     $('#previewInput, #previewOutput').html('');
 } $('.mih1 .bdl').click(limpiar);
 // OPTIMIZADOR [END]
-const exaen = '<svg viewBox="0 0 128 128"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path></svg>';
-const exars = '<svg viewBox="0 0 128 128"><path fill="#E44D26" d="M19.0 113.9L9.0 1.7h109.9l-10.0 112.2-45.0 12.48z"></path><path fill="#F16529" d="M64 116.8l36.4-10.1 8.6-95.9H64z"></path><path fill="#EBEBEB" d="M64 52.5H45.8L44.53 38.4H64V24.6H29.5l.33 3.7 3.4 37.9H64zm0 35.7l-.61.0-15.3-4.14-.979-11.0H33.8l1.9 21.6 28.2 7.8.063-.017z"></path><path fill="#fff" d="M64.0 52.5v13.8h16.9l-1.6 17.8-15.35 4.1v14.3l28.2-7.82.2-2.3 3.2-36.2.335-3.7h-3.7zm0-27.9v13.8h33.2l.276-3.1.628-7.0.329-3.7z"></path></svg>';
 // OPTIMIZADOR [V2 START]
 $(document).ready(function() {
-const exampleSvg = '<svg viewBox="0 0 128 128"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path></svg>';
+    const exampleSvg = '<svg viewBox="0 0 128 128"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path></svg>';
     const $optimizationSlider = $('#optimization-levelv2');
     $optimizationSlider.attr({
         'min': 1,
@@ -2705,44 +2700,6 @@ $('.gov3').click(function(){autosvgv3(); tamx('.sper','.opvl'); redux() }); //Au
 $('.gov4').click(function(){autosvgv4(); tamx('.sper','.opvl'); redux() }); //Auto v4, colores y tamaños 
   
 // EDITAR [START]
-  $('.txen,.txrs').each(function(){
-    $(this).val($(this).hasClass('txen')? exaen : exars);
-  });
-
-  
-// GENERANDO EN AUTOMATICO 
-$(document).ready(function() {
-    $('.goarr').on('click', function() {
-        // Obtener el contenido del textarea
-        var contenido = $('.txearr').val();        
-        // Verificar que hay contenido
-        if (!contenido.trim()) {
-            alert("Por favor ingrese datos en el textarea");
-            return;
-        }
-        try {
-            // Crear un elemento script
-            var script = document.createElement('script');
-            script.type = 'text/javascript';            
-            // Crear un nodo de texto con el contenido
-            var textNode = document.createTextNode(contenido);
-            script.appendChild(textNode);            
-            // Añadir el script al head
-            document.head.appendChild(script);            
-            // Verificar si la variable Genial se creó correctamente
-            if (typeof Genial !== 'undefined' && Array.isArray(Genial)) {
-                alert("Array agregado correctamente: " + Genial.length + " elementos");
-            } else {
-                alert("El contenido no define correctamente la variable Genial");
-            }
-         editarsvg(); // Agregando a nuestro table para visualizar todo 
-        } catch (error) {
-            alert("Error al procesar los datos: " + error.message);
-        }
-    });
-});
-
-// ACTUALIZANDO VALORES 
 function editarsvg(){
   $('.tbcon').html(`
     <h2 class="txc">Editar svg optimizado</h2>
@@ -2762,7 +2719,7 @@ function editarsvg(){
         </tr>
       </thead>
       <tbody>
-        ${Genial.map((wi, index) => `
+        ${micon.map((wi, index) => `
           <tr>
             <td>${index + 1}</td>
             <td class="hecho"><input class="vnam" type="text" value="${wi.icono || ''}"/></td>
@@ -2793,8 +2750,7 @@ function editarsvg(){
       </tfoot>
     </table>
   `);
-} 
-  // detm(editarsvg, 350); //Cargando iconos con tiempo 350ms
+} detm(editarsvg, 350); //Cargando iconos con tiempo 350ms
 // AGREGANDO TAMAÑO ORIGINAL Y OPTIMIZADO 
 function tamx(se,vc){
   $(se).each(function(){
@@ -2894,7 +2850,6 @@ function sumax(){
 })):setTimeout(mijQuery,50)}let lQt=7000,lQv=0,lQz=!localStorage.getItem('wquery');lQz?(["scroll","mousemove"].forEach(e=>addEventListener(e,ldjQuery)),setTimeout(ldjQuery,lQt)):ldjQuery();function ldjQuery(){if(!lQv){lQv=1;lQz&&["scroll","mousemove"].forEach(e=>removeEventListener(e,ldjQuery));let s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js";s.onload=()=>{localStorage.setItem("wquery","wiii");mijQuery()};document.head.appendChild(s)}}
 //THEMES WEB[START]
 const mthemas=[{tnm:"Cielo",co:"#0EBEFF"},{tnm:"Dulce",co:"#FF5C69"},{tnm:"Paz",co:"#29C72E"},{tnm:"Mora",co:"#7000FF"},{tnm:"Futuro",co:"#21273B"}];const thcon=document.createElement('div');thcon.className='mthemes';mthemas.forEach(({tnm,co})=>{const tdv=document.createElement('div');tdv.className='tema';tdv.dataset.tema=`${tnm}|${co}`;tdv.style.background=co;tdv.onclick=()=>mithm(tdv);thcon.appendChild(tdv);});document.body.appendChild(thcon);const mithm=e=>{const [th,tco]=e.dataset.tema.split('|');document.documentElement.dataset.theme=th;(document.querySelector('meta[name="theme-color"]')||Object.assign(document.head.appendChild(document.createElement('meta')),{name:'theme-color'})).content=tco;localStorage.mtheme=e.dataset.tema;document.querySelector('.mtha')?.classList.remove('mtha');e.classList.add('mtha');};const thsved=document.querySelector(`[data-tema="${localStorage.mtheme}"]`)||thcon.firstChild;if(thsved)mithm(thsved);
-
 </script>
 
 </body>
